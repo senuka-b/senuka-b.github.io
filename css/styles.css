@@ -21,13 +21,14 @@
 
 /* From Uiverse.io by satyamchaudharydev */ 
 /* === removing default button style ===*/
-.button {
+.button  { 
     margin: 0;
     height: auto;
     background: transparent;
     padding: 0;
     border: none;
     cursor: pointer;
+    color: white;
   }
   
 
@@ -107,4 +108,30 @@
 
 .century-gothic {
   font-family: 'Century Gothic';
+}
+
+html, body {
+  margin: 0;
+  
+  height: 100%;
+  overflow: hidden; 
+
+}
+
+.scroll-container {
+  height: 100vh; 
+  overflow-y: scroll; 
+  scroll-snap-type: y mandatory; 
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; 
+
+}
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+}
+
+section {
+  height: 100vh; 
+  scroll-snap-align: center; 
 }

@@ -24,39 +24,9 @@ function typewrite() {
   });
 }
 
+function scrollToTop() {
+  console.log("Scrolled to top");
+  
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+}
 
-// SCROLLING -> Next page
-
-let maximum_scroll_to_go = 10;
-let scroll_tries = 0;
-
-window.addEventListener("scroll",function(){
-
-});
-
-window.onwheel = function () {
-  var limit =
-    Math.max(
-      document.body.scrollHeight,
-      document.body.offsetHeight,
-      document.documentElement.clientHeight,
-      document.documentElement.scrollHeight,
-      document.documentElement.offsetHeight
-    ) -
-    window.innerHeight -
-    1;
-
-  var distanceScrolled = document.documentElement.scrollTop || document.body.scrollTop;
-
-  if (distanceScrolled === limit) {
-    console.log('yes');
-    console.log(++scroll_tries);
-    
-    if (scroll_tries >= maximum_scroll_to_go) {
-      console.log("Do it now")
-    }
-    
-  } else if (distanceScrolled < limit) {
-    scroll_tries = 0;
-  }
-};
