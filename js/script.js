@@ -27,6 +27,6 @@ function typewrite() {
 function scrollToTop() {
   console.log("Scrolled to top");
   
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
+    document.getElementById("scroll-container").scrollTo({top: 0, behavior: "smooth"});
 }
 
