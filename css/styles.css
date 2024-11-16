@@ -134,3 +134,9 @@ section {
   height: 100vh; 
   scroll-snap-align: center; 
 }
+
+.carousel-control-next,
+.carousel-indicators,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
