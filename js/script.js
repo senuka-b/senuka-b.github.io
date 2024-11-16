@@ -107,7 +107,7 @@ function setupProjects() {
       <div class="carousel-item active">
         <div class="card shadow">
             <div class="card-body ">
-                <div style="background-color: ${project.color} ">
+                <div style="background-color: ${project.color}" class="rounded-3">
 
                     <h3
                         class="card-title fw-bold p-3 pb-1 mb-0 rounded-1">
